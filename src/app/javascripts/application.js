@@ -1,7 +1,7 @@
+var SH = window.SH || {};
 $(function() {
 
-  // Initialize plugins
-
-  // Initialize modules
+  SH.firebase.init();
+  SH.slack.init();
 
 });
