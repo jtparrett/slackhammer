@@ -1,0 +1,19 @@
+default:
+  - 'clean'
+  - 'sass'
+  - 'copy'
+  - 'concat'
+  - 'uglify'
+  - 'svgmin'
+  - 'connect'
+  - 'zetzer'
+  - 'watch'
+
+deploy_staging:
+  - 'clean'
+  - 'sass'
+  - 'copy'
+  - 'concat'
+  - 'uglify'
+  - 'svgmin'
+  - 'scp:staging'
