@@ -2,6 +2,7 @@ default:
   - 'clean'
   - 'sass'
   - 'copy'
+  - 'handlebars'
   - 'concat'
   - 'uglify'
   - 'svgmin'

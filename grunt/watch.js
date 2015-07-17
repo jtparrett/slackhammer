@@ -38,5 +38,13 @@ module.exports = {
       spawn: false,
       livereload: true
     }
+  },
+  handlebars: {
+    files: ['src/app/templates/**/*.hbs'],
+    tasks: ['handlebars', 'concat', 'uglify'],
+    options: {
+      spawn: false,
+      livereload: true
+    }
   }
 }

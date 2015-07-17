@@ -10,7 +10,7 @@ SH.slack = function(){
       return false;
     }
 
-    getChannels();
+    SH.slackEvents.init();
   }
 
   function checkCode(){
@@ -36,16 +36,6 @@ SH.slack = function(){
       },
       success: function(data){
         localStorage.setItem('slack_token', data.access_token);
-      }
-    });
-  }
-
-  function getChannels(){
-    slackApi('channels.list', {
-      success: function(data){
-        data.channels.forEach(function(channel){
-          console.log(channel.name);
-        });
       }
     });
   }
